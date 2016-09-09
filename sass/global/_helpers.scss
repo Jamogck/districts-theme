@@ -1,0 +1,9 @@
+.hide-on-small {
+	display: none;
+}
+
+@media screen and (min-width: 615px) {
+	.hide-on-small {
+		display: block;
+	}
+}
