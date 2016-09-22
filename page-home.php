@@ -13,16 +13,9 @@
  */
 
 get_header(); ?>
-	<div class="hero  flex  inner">
-        <span class="animated-layer">
-        </span>
-        <div class="hero_text">
-            <h2>What we believe</h2>
-            <a class="btn_rounded" href="/statement-of-faith/">View our statement of faith</a>
-        </div>
-	</div>
+	
 
-	<section id="main">
+	<section class="main">
         <div class="inner">
             <div class="page-block">
                 <div class="large-size1of2">
@@ -35,9 +28,8 @@ get_header(); ?>
                     <a class="btn btn_green" href="#">Find a church</a>
                 </div>
             </div>
-
             <?php 
-                $posts = get_field('featured_content');
+            $posts = get_field('featured_content');
 
                 if( $posts ): ?>
                     <div class="page-block">
@@ -57,7 +49,18 @@ get_header(); ?>
                     <?php wp_reset_postdata(); // IMPORTANT - reset the $post object so the rest of the page works correctly ?>
                 <?php endif; 
             ?>
-
+        </div>
+    </section>
+    <div class="hero  flex  inner">
+        <span class="animated-layer">
+        </span>
+        <div class="hero_text">
+            <h2>What we believe</h2>
+            <a class="btn_rounded" href="/statement-of-faith/">View our statement of faith</a>
+        </div>
+    </div>
+    <section class="main">
+        <div class="inner">
             <?php get_template_part( 'template-parts/efca-content'); ?>
 
 <?php

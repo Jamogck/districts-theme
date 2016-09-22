@@ -16,6 +16,8 @@ get_header(); ?>
 
 	<section id="main">
     	<div class="inner">
+    		<div class="page_content">
+    			<h2>Blog</h2>
 
 		<?php
 		if ( have_posts() ) :
@@ -40,6 +42,6 @@ get_header(); ?>
 
 		endif; ?>
 
-
+	</div><!--end page_content-->
 <?php
 get_footer();

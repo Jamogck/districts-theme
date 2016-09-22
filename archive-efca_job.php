@@ -28,8 +28,8 @@ get_header(); ?>
 				$job_location = get_field('job_location');
 				?>
 
-				<a href="<?php echo $workplace_link; ?>" title="<?php echo $workplace; ?>"><?php echo $workplace; ?></a>
-				<span><?php echo $job_location; ?></span>
+				<a target="_blank" class="icon-outgoing" href="<?php echo $workplace_link; ?>" title="<?php echo $workplace; ?>"><?php echo $workplace; ?></a>
+				<span class="field-location icon-location"><?php echo $job_location; ?></span>
 
 
 			<?php endwhile;

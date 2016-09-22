@@ -1,6 +1,6 @@
 <?php 
 
-/* Template Name: Staff Page */ 
+/* Template Name: Giving Page */ 
 
 get_header(); ?>
 <section id="main">
@@ -10,7 +10,7 @@ get_header(); ?>
 			<?php
 			while ( have_posts() ) : the_post();
 
-				get_template_part( 'template-parts/staff-template' );
+				get_template_part( 'template-parts/giving-template' );
 
 			endwhile; // End of the loop.
 			?>

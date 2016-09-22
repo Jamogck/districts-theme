@@ -34,4 +34,16 @@ jQuery(document).ready(function($) {
 	}
 
 	toggleInfo();
+
+	/* EFCA giving form */
+
+	$('.des-check input:radio[name="designation"]').change(function() {
+		var formId = '#' + this.id + '-form';
+		if ($(this.checked)) {
+			// $('.form-container').attr('id', formId);
+			$('.form-container').removeClass('is-selected');
+			$(formId).addClass('is-selected').fadeIn();
+			
+		}
+	});
 });

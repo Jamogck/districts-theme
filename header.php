@@ -22,13 +22,19 @@
         <style>
             .site-title a {
                 display: inline-block;
-                background: url('<?php echo $logo; ?>') no-repeat center;
-                background-size: auto 100%;
+                background: url('<?php echo $logo; ?>') no-repeat;
+                background-size: contain;
+                background-position: center left;
                 color: transparent;
-                height: 50px;
+                height: 60px;
             }
             .site-title a:hover, .site-title a:focus {
                 color: transparent;
+            }
+            @media screen and (max-width: 615px) {
+                .site-title a {
+                    background-position: center right;
+                }
             }
         </style>
     <?php }; ?>
@@ -63,7 +69,7 @@
                       </span>
                     </button>
                 </div>
-                        
+                    
                     <h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
 
 				    <?php clean_custom_menu( 'primary' ); ?>

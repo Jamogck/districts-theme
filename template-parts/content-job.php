@@ -9,7 +9,7 @@
 
 ?>
 
-<article id="post-<?php the_ID(); ?>" class="page_content">
+<article id="post-<?php the_ID(); ?>">
 	<header class="entry-header">
 		<h2>Employment</h2>
 		<?php the_post_thumbnail();
@@ -18,8 +18,8 @@
 		$workplace_link = get_field('job_workplace_link');
 		$job_location = get_field('job_location');
 		?>
-		<a href="<?php echo $workplace_link; ?>" title="<?php echo $workplace; ?>"><?php echo $workplace; ?></a>
-				<span class=""><?php echo $job_location; ?></span>
+		<a target="_blank" class="icon-outgoing" href="<?php echo $workplace_link; ?>" title="<?php echo $workplace; ?>"><?php echo $workplace; ?></a>
+				<span class="field-location icon-location"><?php echo $job_location; ?></span>
 	</header><!-- .entry-header -->
 
 	<div class="entry-content">

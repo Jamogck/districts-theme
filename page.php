@@ -14,8 +14,7 @@
 
 get_header(); ?>
 <section id="main">
-    <div class="inner">
-
+   <div class="inner">
 			<?php
 			while ( have_posts() ) : the_post();
 

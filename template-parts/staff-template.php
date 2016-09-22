@@ -9,7 +9,7 @@
 
 ?>
 
-<article id="post-<?php the_ID(); ?>" class="page_content">
+<article id="post-<?php the_ID(); ?>">
 	<header class="entry-header">
 		<?php the_title( '<h1 class="entry-title">', '</h1>' );?>
 	</header><!-- .entry-header -->
@@ -43,8 +43,8 @@
     					<div class="contact_info">
 		                    <span class="toggler  btn  btn_green">Contact Info +</span>
 		                    <ul>
-		                        <li>EMAIL: <a href="mailto:<?php echo $email; ?>"><?php echo $email; ?></a></li>
-		                        <li>TEL: <?php echo $phone; ?></li>
+		                        <li><a href="mailto:<?php echo $email; ?>"><?php echo $email; ?></a></li>
+		                        <li><?php echo $phone; ?></li>
 		                    </ul>
 	                	</div>
 	            	</div>

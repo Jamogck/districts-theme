@@ -11,6 +11,7 @@ get_header(); ?>
 
 	<section id="main">
     	<div class="inner">
+    		<div class="page_content">
 
 		<?php
 		while ( have_posts() ) : the_post();
@@ -26,6 +27,7 @@ get_header(); ?>
 
 		endwhile; // End of the loop.
 		?>
+			</div><!--end .page_content -->
 
 
 <?php

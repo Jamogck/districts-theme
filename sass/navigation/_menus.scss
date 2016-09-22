@@ -8,6 +8,7 @@
 	.inner {
 		padding-top: 12px;
 		-webkit-justify-content: space-between;
+		justify-content: space-between;
 		a.btn {
 			-webkit-box-flex: 0 0 115px;      /* OLD - iOS 6-, Safari 3.1-6 */
 			-moz-box-flex: 0 0 115px;         /* OLD - Firefox 19- */
@@ -17,16 +18,8 @@
 			flex: 0 0 115px;                  /* NEW, Spec - Opera 12.1, Firefox 20+ */
 		}
 	}
-}
-
-#searchForm {
 	input[type="search"] {
 		width: 75px;
-		border-radius: 4px 0 0 4px;
-		padding-left: 8px;
-	}
-	input[type="search"]:focus {
-		width: 173px;
 	}
 }
 
@@ -94,7 +87,7 @@
 	display: block;
 }
 
-@media screen and (min-width: 615px) {
+@media screen and (min-width: 995px) {
 	#nav_trigger {
 		display: none;
 	}

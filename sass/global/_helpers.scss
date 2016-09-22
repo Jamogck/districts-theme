@@ -2,6 +2,24 @@
 	display: none;
 }
 
+.icon-location:before {
+	content: '';
+	display: inline-block;
+	height: 16px;
+    width: 12px;
+    margin-right: 6px;
+	background-image: url('images/icons/icon-location.png');
+}
+
+.icon-outgoing:after {
+	content: '';
+	display: inline-block;
+	height: 16px;
+    width: 12px;
+    margin-left: 6px;
+	background: url('images/icons/icon-outgoing.png') no-repeat;
+}
+
 @media screen and (min-width: 615px) {
 	.hide-on-small {
 		display: block;

@@ -37,14 +37,18 @@
 				</nav>
 			</div>
 			<?php endif; ?>
-
-			<div class="container">
-				<h4>Get our Newsletter</h4>
-				<p>
-					Our monthly newsletter.
-				</p>
-				<a class="btn btn_green" href="#">Subscribe</a>
-			</div>
+			<?php 
+                if ( get_field('include_newsletter', 'option') == 'yes' ) { 
+                    $subscription_link = get_field( 'subscription_link', 'option' );
+                    $newsletter_desc   = get_field( 'newsletter_description', 'option' ); ?>
+                    <div class="container">
+		                <h4>Get our Newsletter</h4>
+						<p>
+							<?php echo $newsletter_desc; ?>
+						</p>
+						<a class="btn btn_green" href="<?php echo $subscription_link; ?>">Subscribe</a>
+					</div>
+            <?php }; ?>
 		</div>
 	</footer><!-- #page-footer -->
   </div> <!-- end page -->
